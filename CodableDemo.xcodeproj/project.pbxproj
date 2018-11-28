@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		13B3912821AE596A00F1C769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B3912721AE596A00F1C769 /* Assets.xcassets */; };
 		13B3912B21AE596A00F1C769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B3912921AE596A00F1C769 /* LaunchScreen.storyboard */; };
 		13B3913621AE596A00F1C769 /* CodableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3913521AE596A00F1C769 /* CodableDemoTests.swift */; };
+		13B3914121AE5ADB00F1C769 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3914021AE5ADB00F1C769 /* UserEntity.swift */; };
+		13B3914321AE5B1000F1C769 /* Alamofire+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3914221AE5B1000F1C769 /* Alamofire+Extension.swift */; };
+		45A05D65E5BFE02FF2778F71 /* Pods_CodableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1EED07186B838944776E7B /* Pods_CodableDemo.framework */; };
+		967630106C3DFC818138B297 /* Pods_CodableDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FF641849A18B796D090BA2 /* Pods_CodableDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,14 @@
 		13B3913121AE596A00F1C769 /* CodableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B3913521AE596A00F1C769 /* CodableDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDemoTests.swift; sourceTree = "<group>"; };
 		13B3913721AE596A00F1C769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B3914021AE5ADB00F1C769 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		13B3914221AE5B1000F1C769 /* Alamofire+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extension.swift"; sourceTree = "<group>"; };
+		5C9769B8969ED86848B722C5 /* Pods-CodableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodableDemo/Pods-CodableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		62EDAF49CAC4CDE11E0F2021 /* Pods-CodableDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodableDemoTests/Pods-CodableDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8502C327061D0A459737134C /* Pods-CodableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodableDemo/Pods-CodableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		852DAC47B3286C9A759CF53E /* Pods-CodableDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodableDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodableDemoTests/Pods-CodableDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9FF641849A18B796D090BA2 /* Pods_CodableDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1EED07186B838944776E7B /* Pods_CodableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A05D65E5BFE02FF2778F71 /* Pods_CodableDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967630106C3DFC818138B297 /* Pods_CodableDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0319F8C3EB0DA6AE5691DEAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8502C327061D0A459737134C /* Pods-CodableDemo.debug.xcconfig */,
+				5C9769B8969ED86848B722C5 /* Pods-CodableDemo.release.xcconfig */,
+				62EDAF49CAC4CDE11E0F2021 /* Pods-CodableDemoTests.debug.xcconfig */,
+				852DAC47B3286C9A759CF53E /* Pods-CodableDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		13B3911421AE596400F1C769 = {
 			isa = PBXGroup;
 			children = (
 				13B3911F21AE596400F1C769 /* CodableDemo */,
 				13B3913421AE596A00F1C769 /* CodableDemoTests */,
 				13B3911E21AE596400F1C769 /* Products */,
+				0319F8C3EB0DA6AE5691DEAF /* Pods */,
+				D8E6357ED8EB89B2E90D0636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,8 @@
 				13B3912721AE596A00F1C769 /* Assets.xcassets */,
 				13B3912921AE596A00F1C769 /* LaunchScreen.storyboard */,
 				13B3912C21AE596A00F1C769 /* Info.plist */,
+				13B3914021AE5ADB00F1C769 /* UserEntity.swift */,
+				13B3914221AE5B1000F1C769 /* Alamofire+Extension.swift */,
 			);
 			path = CodableDemo;
 			sourceTree = "<group>";
@@ -96,6 +125,15 @@
 			path = CodableDemoTests;
 			sourceTree = "<group>";
 		};
+		D8E6357ED8EB89B2E90D0636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB1EED07186B838944776E7B /* Pods_CodableDemo.framework */,
+				D9FF641849A18B796D090BA2 /* Pods_CodableDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B3913A21AE596A00F1C769 /* Build configuration list for PBXNativeTarget "CodableDemo" */;
 			buildPhases = (
+				CF293A7F873DA2634B9AC0D2 /* [CP] Check Pods Manifest.lock */,
 				13B3911921AE596400F1C769 /* Sources */,
 				13B3911A21AE596400F1C769 /* Frameworks */,
 				13B3911B21AE596400F1C769 /* Resources */,
+				FF95822E201F117D5367CB44 /* [CP] Embed Pods Frameworks */,
+				F55FFE433BDA6ADB1D5530CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B3913D21AE596A00F1C769 /* Build configuration list for PBXNativeTarget "CodableDemoTests" */;
 			buildPhases = (
+				7F1F0B349329DB4BC1FC607F /* [CP] Check Pods Manifest.lock */,
 				13B3912D21AE596A00F1C769 /* Sources */,
 				13B3912E21AE596A00F1C769 /* Frameworks */,
 				13B3912F21AE596A00F1C769 /* Resources */,
+				013D20CC4CF8754E8A8BEB89 /* [CP] Embed Pods Frameworks */,
+				FD3FEF069EBED9CF3B063D63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,15 +190,17 @@
 				TargetAttributes = {
 					13B3911C21AE596400F1C769 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 					13B3913021AE596A00F1C769 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B3911C21AE596400F1C769;
 					};
 				};
 			};
 			buildConfigurationList = 13B3911821AE596400F1C769 /* Build configuration list for PBXProject "CodableDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -192,11 +238,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		013D20CC4CF8754E8A8BEB89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodableDemoTests/Pods-CodableDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F1F0B349329DB4BC1FC607F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodableDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF293A7F873DA2634B9AC0D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F55FFE433BDA6ADB1D5530CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodableDemo/Pods-CodableDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3FEF069EBED9CF3B063D63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodableDemoTests/Pods-CodableDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF95822E201F117D5367CB44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodableDemo/Pods-CodableDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodableDemo/Pods-CodableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13B3911921AE596400F1C769 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3914321AE5B1000F1C769 /* Alamofire+Extension.swift in Sources */,
+				13B3914121AE5ADB00F1C769 /* UserEntity.swift in Sources */,
 				13B3912321AE596400F1C769 /* ViewController.swift in Sources */,
 				13B3912121AE596400F1C769 /* AppDelegate.swift in Sources */,
 			);
@@ -350,23 +500,20 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		13B3913B21AE596A00F1C769 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8502C327061D0A459737134C /* Pods-CodableDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = CodableDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CodableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +523,13 @@
 		};
 		13B3913C21AE596A00F1C769 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9769B8969ED86848B722C5 /* Pods-CodableDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = CodableDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CodableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,17 +539,14 @@
 		};
 		13B3913E21AE596A00F1C769 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62EDAF49CAC4CDE11E0F2021 /* Pods-CodableDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = CodableDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CodableDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -415,17 +557,14 @@
 		};
 		13B3913F21AE596A00F1C769 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852DAC47B3286C9A759CF53E /* Pods-CodableDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = CodableDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CodableDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
